@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <h1 id="high-score">View high scores</h1>
-        <h1 id="time">Time: 0</h1>
+        <h1 id="time">Time: 70</h1>
     </header>
 
     <section id="main-screen">
@@ -25,59 +25,59 @@
     <section id="first-question" class="quiz-sections">
         <h1>Commonly used data types Do Not Include:</h1>
         <div class="buttons">
-            <button id="strings" class="answers-button" data-answer="wrong">1. strings</button>
-            <button id="booleans" class="answers-button" data-answer="wrong">2. booleans</button>
-            <button id="alerts" class="answers-button" data-answer="correct">3. alerts</button>
-            <button id="numbers" class="answers-button" data-answer="wrong">4. numbers</button>
+            <button id="strings" class="answers-button first-question" data-answer="wrong">1. strings</button>
+            <button id="booleans" class="answers-button first-question" data-answer="wrong">2. booleans</button>
+            <button id="alerts" class="answers-button first-question" data-answer="correct">3. alerts</button>
+            <button id="numbers" class="answers-button first-question" data-answer="wrong">4. numbers</button>
         </div>
     </section>
 
     <section id="second-question" class="quiz-sections">
         <h1>The condition in an if / else statement is enclosed with ______</h1>
         <div class="buttons">
-            <button id="quotes" class="answers-button" data-answer="wrong">1. quotes</button>
-            <button id="curly-brackets" class="answers-button" data-answer="wrong">2. curly brackets</button>
-            <button id="parenthesis" class="answers-button" data-answer="correct">3. parenthesis</button>
-            <button id="square-brackets" class="answers-button" data-answer="wrong">4. square brackets</button>
+            <button id="quotes" class="answers-button second-question" data-answer="wrong">1. quotes</button>
+            <button id="curly-brackets" class="answers-button second-question" data-answer="wrong">2. curly brackets</button>
+            <button id="parenthesis" class="answers-button second-question" data-answer="correct">3. parenthesis</button>
+            <button id="square-brackets" class="answers-button second-question" data-answer="wrong">4. square brackets</button>
         </div>
     </section>
 
     <section id="third-question" class="quiz-sections">
         <h1>Arrays in JavaScript can be used to store ______</h1>
         <div class="buttons">
-            <button id="num-strings" class="answers-button" data-answer="wrong">1. numbers and strings</button>
-            <button id="other-arrays" class="answers-button" data-answer="wrong">2. other arrays</button>
-            <button id="bools" class="answers-button" data-answer="wrong">3. booleans</button>
-            <button id="all-above" class="answers-button" data-answer="correct">4. all of the above</button>
+            <button id="num-strings" class="answers-button third-question" data-answer="wrong">1. numbers and strings</button>
+            <button id="other-arrays" class="answers-button third-question" data-answer="wrong">2. other arrays</button>
+            <button id="bools" class="answers-button third-question" data-answer="wrong">3. booleans</button>
+            <button id="all-above" class="answers-button third-question" data-answer="correct">4. all of the above</button>
         </div>
     </section>
 
     <section id="fourth-question" class="quiz-sections">
         <h1>String values must be enclosed within ______ when being assigned to variables.</h1>
         <div class="buttons">
-            <button id="commas" class="answers-button" data-answer="wrong">1. commas</button>
-            <button id="curly-bracks" class="answers-button" data-answer="wrong">2. curly brackets</button>
-            <button id="quote" class="answers-button" data-answer="correct">3. quotes</button>
-            <button id="parenthes" class="answers-button" data-answer="wrong">4. parenthesis</button>
+            <button id="commas" class="answers-button fourth-question" data-answer="wrong">1. commas</button>
+            <button id="curly-bracks" class="answers-button fourth-question" data-answer="wrong">2. curly brackets</button>
+            <button id="quote" class="answers-button fourth-question" data-answer="correct">3. quotes</button>
+            <button id="parenthes" class="answers-button fourth-question" data-answer="wrong">4. parenthesis</button>
         </div>
     </section>
 
     <section id="fifth-question" class="quiz-sections">
         <h1>A very useful tool used during development and debugging for printing content to the debugging is: </h1>
         <div class="buttons">
-            <button id="JavaScript" class="answers-button" data-answer="wrong">1. JavaScript</button>
-            <button id="terminal" class="answers-button" data-answer="wrong">2. terminal/bash</button>
-            <button id="for-loop" class="answers-button" data-answer="wrong">3. for loops</button>
-            <button id="console-log" class="answers-button" data-answer="correct">4. console.log</button>
+            <button id="JavaScript" class="answers-button fifth-question" data-answer="wrong">1. JavaScript</button>
+            <button id="terminal" class="answers-button fifth-question" data-answer="wrong">2. terminal/bash</button>
+            <button id="for-loop" class="answers-button fifth-question" data-answer="wrong">3. for loops</button>
+            <button id="console-log" class="answers-button fifth-question" data-answer="correct">4. console.log</button>
         </div>
     </section>
 
     <section id="enter-initials">
         <h1>All done!</h1>
-        <h3>Your final score is</h3>
+        <h3 id="final-score"></h3>
         <div id="initials">
             <h3>Enter initials: </h3>
-            <input type="text" id="initial" name="initial">
+            <input type="text" id="initial" name="initial" value=""/>
             <button id="submit">Submit</button>
         </div>
     </section>
