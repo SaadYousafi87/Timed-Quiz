@@ -4,8 +4,8 @@
 This project is to use JavaScript and WebApis to create timed quiz for a user to answer the questions within the time limit.
 
 ## Credits
-Instructor Anthony Maddatu
-Tom Woods
+Instructor Anthony Maddatu\
+Tom Woods\
 UPenn team
 
 ## Acceptance Criteria
